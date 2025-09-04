@@ -7,32 +7,75 @@
 ### AI Tools Required: 
 
 # Explanation: 
-Define the Two Prompt Types:
+🧭 Objective:
 
-Write a basic Prompt: Clear, detailed, and structured prompts that give specific instructions or context to guide the model.
-Based on that pattern type refined the prompt and submit that with AI tool.
-Get the ouput and write the report.
+To evaluate and compare different prompting strategies in AI interactions using varied test scenarios, aiming to determine their effectiveness in generating accurate, relevant, and context-aware responses.
 
-Prepare Multiple Test Scenarios:
-Select various scenarios such as:
-Generating a creative story.
-Answering a factual question.
-Summarizing an article or concept.
-Providing advice or recommendations.
-Or Any other test scenario
-For each scenario, create both a naïve and a basic prompt. Ensure each pair of prompts targets the same task but with different levels of structure.
-Run Experiments with ChatGPT:
-Input the naïve prompt for each scenario and record the generated response.
-Then input the corresponding basic prompt and capture that response.
-Repeat this process for all selected scenarios to gather a full set of results.
-Evaluate Responses : 
-	Compare how ChatGPT performs when given naïve versus basic prompts and analyze the output based on Quality,Accuracy and Depth. Also analyse does ChatGPT consistently provide better results with basic prompts? Are there scenarios where naïve prompts work equally well?
-Deliverables:
-A table comparing ChatGPT's responses to naïve and basic prompts across all scenarios.
-Analysis of how prompt clarity impacts the quality, accuracy, and depth of ChatGPT’s outputs.
-Summary of findings with insights on how to structure prompts for optimal results when using ChatGPT.
+🔬 Prompting Patterns Under Comparison:
+Prompting Pattern	Description
+Zero-Shot Prompting	No examples are provided. The model is asked to perform a task directly.
+One-Shot Prompting	One example is provided to guide the model.
+Few-Shot Prompting	A few examples are provided (typically 2–5) to demonstrate the task.
+Chain-of-Thought Prompting	Prompts encourage the model to reason step-by-step before giving a final answer.
+Role-Based Prompting	Prompt defines a specific role or persona for the model (e.g., "Act as a lawyer...").
+Instruction-Based Prompting	A direct instruction is given without examples, often clearly formatted.
+Self-Ask Prompting	The model is prompted to ask itself questions before answering.
+⚙️ Experimental Setup:
+Independent Variable:
+
+Prompting pattern used
+
+Dependent Variables:
+
+Accuracy
+
+Completeness
+
+Relevance
+
+Reasoning quality
+
+Efficiency (conciseness, clarity)
+
+📂 Test Scenarios:
+
+We evaluate each pattern using different task types:
+
+✅ Scenario 1: Factual Q&A
+
+Task: "What is the capital of Brazil?"
+
+✅ Scenario 2: Text Classification
+
+Task: "Classify the following review as Positive or Negative: 'The product broke after 1 day.'"
+
+✅ Scenario 3: Math Problem Solving
+
+Task: "If a train travels 60 miles in 1.5 hours, what is its average speed?"
+
+✅ Scenario 4: Creative Writing
+
+Task: "Write a short story about a lost dog that finds its way home."
+
+✅ Scenario 5: Coding Task
+
+Task: "Write a Python function that returns the factorial of a number."
 
 
-# OUTPUT
+## Prompt:
 
-# RESULT: The prompt for the above said problem executed successfully
+Zero-Shot: "If a train travels 60 miles in 1.5 hours, what is its average speed?"
+
+Prompt:
+
+Chain-of-Thought: "If a train travels 60 miles in 1.5 hours, what is its average speed? Let's think step by step."
+
+
+
+
+# OUTPUT:
+<img width="300" height="168" alt="image" src="https://github.com/user-attachments/assets/02e3eac5-5954-43db-a3f7-577ea498b00a" />
+
+
+# RESULT: 
+The prompt for the above said problem executed successfully
